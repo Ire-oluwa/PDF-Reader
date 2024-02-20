@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:pdf_reader/routes/app_pages.dart';
 import 'package:pdf_reader/routes/route_names.dart';
-import 'package:pdf_reader/screens/registration.dart';
 import 'firebase_options.dart';
 
 
@@ -47,7 +46,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          initialRoute: RouteName.registration,
+          initialRoute: RouteName.onboardingScreen,
           getPages: AppPages.pages,
         ),
       ),
