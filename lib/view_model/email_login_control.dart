@@ -29,8 +29,7 @@ class EmailLoginControl extends GetxController {
           .firebaseSignInWithEmailPassword(email.text, password.text).then((value) {
         log(value!.uid.toString());
         uid = value.uid;
-        return Get.toNamed(RouteName.pdfListScreen);
-      });
+      }).then((value) => Get.toNamed(RouteName.pdfListScreen));
       update();
     } catch(error){
       log(time: DateTime.now().toLocal(), "Error: $error");
